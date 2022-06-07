@@ -17,18 +17,12 @@ const getUserChoice = (userInput) =>
   }
 }
 
- //primeira função finalizada!
-
 function getComputerChoice()
 {
     const aleatorio = (min, max) => Math.floor(Math.random() * (max - min) + min)
     const opcoes = ['pedra','papel','tesoura'];
     return (opcoes[aleatorio (0, opcoes.length)]);
 }
-
-/*Posso fazer sem if/else?
-Código finalizado T.T
-*/
 
 const determineWinner = (userChoice, computerChoice) => 
 {
@@ -60,10 +54,6 @@ const determineWinner = (userChoice, computerChoice) =>
   }
 
 }
-
-/*Código finalizado!
-Não tenho certeza se está correto.
-*/
 
 const playGame = () =>
 {
