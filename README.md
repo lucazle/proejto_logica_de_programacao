@@ -1,4 +1,4 @@
-# projeto_logica_de_programacao
+# Projeto Lógica de Programação
 
 Projeto da unidade de Lógica de Programação do curso START.
 
