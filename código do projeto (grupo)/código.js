@@ -1,14 +1,32 @@
+
 const getUserChoice = (userInput) =>{
-    if(userInput.toLowerCase () == "pedra"){
-        return "Sua opção foi pedra";
-    } else if(userInput.toLowerCase () == "papel"){
-        return "Sua opção foi papel";
-    }else if(userInput.toLowerCase () == "tesoura"){
-           return "Sua opção foi tesoura";
-    }
+  if(userInput.toLowerCase () == "pedra"){
+      return"pedra";
+  } else if(userInput.toLowerCase () == "papel"){
+      return"papel";
+  }else if(userInput.toLowerCase () == "tesoura"){
+          return"tesoura";
+  }else{
+      return("Opção Inválida")
+  }
 }
 
-//2ª função em falta
+function getComputerChoice ()
+{
+    let numero = Math.floor(Math.random() * 3);
+    
+    switch (numero){
+      case 0:
+        return "pedra"
+        break;
+      case 1:
+        return "papel"
+         break;
+      case 2:
+        return "tesoura"
+        break;
+  }
+}
 
 const determineWinner = (userChoice, computerChoice) => 
 {
@@ -41,4 +59,14 @@ const determineWinner = (userChoice, computerChoice) =>
 
 }
 
-//4ª função em falta
+const playGame = () => {
+  const userChoice = getUserChoice("pedra");
+  const computerChoice = getComputerChoice();
+
+  console.log("Usuário: " + userChoice);
+  console.log("Computador: " + computerChoice);
+
+   console.log(determineWinner(userChoice, computerChoice))
+}
+
+playGame()
